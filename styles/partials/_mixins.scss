@@ -1,0 +1,18 @@
+@mixin green-button() {
+  border-radius: 7px;
+  font-size: 12px;
+  background-color: green;
+}
+
+@mixin blue-btn {
+  background-color: $primary_btn_color;
+  color: white;
+  border-radius: 5px;
+  margin: 2px;
+  padding: 1em;
+  font-size: 1em;
+  &:hover {
+    background-color: darken($primary_btn_color,7%);
+    cursor: pointer;
+  }
+}

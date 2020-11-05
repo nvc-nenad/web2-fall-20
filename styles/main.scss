@@ -1,0 +1,34 @@
+@import './vendor/normalize';
+@import './partials/colors';
+@import './partials/typography';
+@import './partials/mixins';
+
+nav {
+  background-color: $primary-color;
+  ul {
+    padding: 10px;
+    li {
+      font-size: $text-small;
+    }
+  }
+}
+
+h1 {
+  font-size: $text-large;
+  font-family: $primary-font;
+}
+
+
+
+
+.btn {
+  @include green-button();
+}
+
+.green-btn {
+  @include green-button();
+}
+
+.btn {
+  @include blue-btn;
+}
